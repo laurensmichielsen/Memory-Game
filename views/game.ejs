@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing Memory</title>
+    <link rel='stylesheet' href='/stylesheets/game.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<body>
+    <div class="left">
+        <div class="grid">
+            <div class="card facedown" id="c0"></div>
+            <div class="card facedown" id="c1"></div>
+            <div class="card facedown" id="c2"></div>
+            <div class="card facedown" id="c3"></div>
+            <div class="card facedown" id="c4"></div>
+            <div class="card facedown" id="c5"></div>
+            <div class="card facedown" id="c6"></div>
+            <div class="card facedown" id="c7"></div>
+            <div class="card facedown" id="c8"></div>
+            <div class="card facedown" id="c9"></div>
+            <div class="card facedown" id="c10"></div>
+            <div class="card facedown" id="c11"></div>
+            <div class="card facedown" id="c12"></div>
+            <div class="card facedown" id="c13"></div>
+            <div class="card facedown" id="c14"></div>
+            <div class="card facedown" id="c15"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="opponent">
+            <p>Opponent:</p>
+            <p>Moves: <span class="opponentMoves">0</span></p>
+            <p>Score: <span class="opponentScore">0</span></p>
+        </div>
+
+        <div class="me">
+            <p>Me:</p>
+            <p>Moves: <span class="myMoves">0</span></p>
+            <p>Score: <span class="myScore">0</span></p>
+        </div>
+
+        <div class="status">Status: WAITING</div>
+    </div>
+
+    <div class="popupBackground">
+        <div class="popup">
+            <h1>Game Over</h1>
+            <div class="stats">
+                <div class="yourStats">
+                    Your stats:
+                    <p>Moves: <span class="myMoves">0</span></p>
+                    <p>Score: <span class="myScore">0</span></p>
+                </div>
+                <div class="opponentStats">
+                    Opponent stats:
+                    <p>Moves: <span class="opponentMoves">0</span></p>
+                    <p>Score: <span class="opponentScore">0</span></p>
+                </div>
+                <div class="result">Result: </div>
+            </div>
+
+            <div class="opponentQuit">Opponent quit (game aborted).</div>
+            
+            <form action="/">
+                <button class="homeBtn">Start page</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="javascripts/interactions.js"></script>
+
+</body>
+</html>

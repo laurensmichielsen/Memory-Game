@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.popupBackground {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+.opponentQuit {
+    display: none;
+    font-size: x-large;
+    margin: 130px auto;
+}
+
+.stats {
+    display: none;
+    height: 80%;
+    font-size: x-large;
+    position: relative;
+}
+
+.stats * {
+    padding-top: 20px;
+}
+
+.result {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.yourStats {
+    width: 50%;
+}
+.opponentStats {
+    width: 50%;
+}
+
+.homeBtn {
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+}
+
+.left {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.right {
+    height: 100%;
+    font-size: xx-large;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 22%;
+    height: 23%;
+    margin: 5px;
+
+    background-position: center;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.matched {
+    border: 3px solid orange;
+    margin: 2px;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.selected {
+    border: 3px solid yellow;
+    margin: 2px;
+    pointer-events: none;
+}
+
+.apple {
+    background-image: url("../images/windmolen.jpeg");
+}
+.banana {
+    background-image: url("../images/Max.jpeg");
+}
+.grape {
+    background-image: url("../images/tulp.jpeg");
+}
+.kiwi {
+    background-image: url("../images/Canal.jpeg");
+}
+.orange {
+    background-image: url("../images/Leeuw.jpeg");
+}
+.pineapple {
+    background-image: url("../images/tile.jpeg");
+}
+.strawberry {
+    background-image: url("../images/Library.jpeg");
+}
+.watermelon {
+    background-image: url("../images/Kaas.jpeg");
+}
+
+.facedown {
+    background-image: url("../images/tudelft.png");
+}
